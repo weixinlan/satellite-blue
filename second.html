@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+   body{background-size:cover ;}
+   ul {
+    list-style-type: none;
+    color: azure;
+    height: 30%;
+    padding-left: 20px;
+   }
+   .nave{
+       display: inline-block;
+       line-height: 30px;
+       width: 70px;
+       cursor: pointer;
+   }
+   li:hover{color: rgb(124, 170, 195);}
+   ul img{
+       display: inline-block;
+       width: 60px;
+       height: 30px;
+    padding-right: 35px;
+   }
+input[type=text]{
+    width: 60px;
+    height: 40px;
+   margin-left: 500px;
+   margin-top: 250px;
+   border: none;
+   border-radius: 20px;
+   padding-left: 30px;
+  background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg95.699pic.com%2Fxsj%2F05%2Fff%2Fyf.jpg%21%2Ffw%2F700%2Fwatermark%2Furl%2FL3hzai93YXRlcl9kZXRhaWwyLnBuZw%2Falign%2Fsoutheast&refer=http%3A%2F%2Fimg95.699pic.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1657335880&t=7f86c39c204f77feb32bbaa52db342bb');
+   background-position: left;
+   background-repeat: no-repeat;
+   background-size: 30px ;
+   transition: width 1s ease-in-out;
+   outline: none;
+}
+input:focus{
+    width: 600px;
+}
+button{
+    margin-top: 20px;
+    margin-left: 760px;
+   height: 25x;
+   width: 80px;
+   text-align: center;
+   background-color: rgb(85, 137, 163);
+   border: none;
+   border-radius: 20px;
+   color: aliceblue;
+   font-size: 20px;
+}
+.droptown{
+    position: relative;
+    display: inline-block;
+}
+.droptown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(254, 254, 254);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 6px;
+    z-index: 1;  
+}
+.droptown:hover .droptown-content{
+    display: block;
+}
+p:hover{
+background-color: rgb(199, 217, 228);
+}
+</style>
+    </head>
+    <body style="background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn10108%2F600%2Fw1920h1080%2F20200219%2F0065-iprtayz5782538.jpg&refer=http%3A%2F%2Fn.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1657336148&t=232c8daccb1a66f6325d5b93cd1b2445');">
+        <ul class="navs">
+            <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201509%2F27%2F20150927124858_enAQy.thumb.700_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1657336089&t=e1082cdcb9709d5e31d7ba88a0d4375f" alt="">
+            <li class="nave">Images</li>
+            <li class="nave">Videos</li>
+            <li class="nave">
+             <div class="droptown">
+                <span class="nave">More</span>
+                <div class="droptown-content">
+                <p>map</p>
+                <p>news</p>
+                </div>
+             </div>
+            </li>
+        </ul>
+            <input type="text"><br>
+
+        <button type="button">search</button>
+    </body>
+</html>
