@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        span{
+            color: red;
+        }
+        button{
+              margin: 100px 700px;
+        }
+        div{
+            font-size: 50px;
+            margin-left: 550px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="Timing()">Timing start</button>
+    <div id="demo">
+
+    </div>
+    <script>
+        var  block = document.getElementById('demo');
+        var i = 0;
+        var stop=null
+        var state=0
+        
+        function Timing(){
+            if(stop != null){
+              clearInterval(stop);
+              stop=null;
+              state=0;
+            }
+            else{
+                    stop = setInterval(update,1000);
+                    state=1;
+                }
+        }
+        function update(id="stop"){
+            var j = i++;
+            block.innerHTML = 'Time passed' + ':'+' '+ '<span>'+j+'</span>' +' '+'s';
+        }
+
+    </script>
+</body>
+</html>
